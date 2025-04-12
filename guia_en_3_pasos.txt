@@ -1,0 +1,38 @@
+INSTRUCTIVO PARA VERIFICAR CERTIFICADOS SSL
+
+No hay que instalar nada más. Solo descargar y ejecutar.
+
+✅ PASO 1: Requisitos
+- Tener instalado Python 3 (si no lo tenés, descargalo desde https://www.python.org/)
+- Tener conexión a internet
+
+✅ PASO 2: Descargar el archivo
+1. Descargá el archivo llamado: verificar_ssl.py
+2. Guardalo en una carpeta fácil de encontrar, por ejemplo: Escritorio
+
+✅ PASO 3: Ejecutar el script
+1. Abrí la consola (cmd o PowerShell)
+2. Andá a la carpeta donde guardaste el archivo. Por ejemplo:
+   cd Escritorio
+
+3. Ejecutá el script con:
+   python verificar_ssl.py
+
+✅ PASO 4: Ver resultados
+- El script va a mostrar la fecha de vencimiento del certificado SSL de varios sitios web
+- También te dirá cuántos días faltan para que expire
+
+📌 Si aparece algún error, puede ser porque:
+- El sitio no tiene certificado SSL o está por HTTP y no HTTPS.
+- El sitio está caído o no responde
+- No hay conexión a internet
+
+📌 Para agregar más sitios web a verificar, simplemente agregalos en la lista (`dominios = [ ... ]`) dentro del archivo, escribiendo el nuevo dominio entre comillas y separado por una coma. Ejemplo:
+
+dominios = [
+    "sitio1.com",
+    "sitio2.com",
+    "nuevositio.com",  ← agregás así
+]
+
+Listo, no hay que instalar nada más. Solo descargar y ejecutar.
